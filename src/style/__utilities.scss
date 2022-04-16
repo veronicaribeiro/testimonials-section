@@ -1,0 +1,33 @@
+.flex{
+    display:flex;
+}
+
+.row{
+    flex-direction: row;
+}
+.column{
+    flex-direction: column;
+}
+.align-item-stretch{
+  align-items: stretch;
+}
+.justify-c-space-between{
+  
+  justify-content: space-between;
+}
+@for $i from 1 through 12 {
+  .flex#{$i}{
+    flex: #{$i};
+  }
+}
+
+/* .:::. GRID .:::.*/ 
+.grid{
+  display: grid;
+}
+
+@for $i from 1 through 32 {
+  .gap#{$i}{
+    gap: #{$i}px;
+  }
+}
